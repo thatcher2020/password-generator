@@ -17,10 +17,10 @@ function generatePassword() {
     return null;
   }
 
-  const lowerCase = ['abcdefghijklmnopqrstuvwxyz'];
-  const upperCase = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
-  const special = ['@%+\\/!#$^?:,~-_.'];
-  const numeric = ['0123456789'];
+  const lowerCase = [...'abcdefghijklmnopqrstuvwxyz'];
+  const upperCase = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'];
+  const special = [...'@%+\\/!#$^?:,~-_.'];
+  const numeric = [...'0123456789'];
 
   const userLowerCase = window.confirm("Would you like to include lowercase letters?");
   const userUpperCase = window.confirm("Would you like to include uppercase letters?");
